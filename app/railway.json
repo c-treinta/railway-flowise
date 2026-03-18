@@ -4,8 +4,7 @@
     "builder": "DOCKERFILE"
   },
   "deploy": {
-    "startCommand": "pnpm start",
-    "healthcheckPath": "/api/v1/chatflows",
-    "restartPolicyType": "ON_FAILURE"
+    "restartPolicyType": "ON_FAILURE",
+    "healthcheckPath": "/api/v1/ping"
   }
 }
